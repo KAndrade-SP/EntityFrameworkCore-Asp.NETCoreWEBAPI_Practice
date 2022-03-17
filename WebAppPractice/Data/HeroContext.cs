@@ -13,7 +13,7 @@ namespace WebAppPractice.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Password=ksv123456;Persist Security Info=True;User ID=ksv;Initial Catalog=HeroApp;Data Source=DESKTOP-6FU40B9");
+            optionsBuilder.UseSqlServer("Persist Security Info=True;Initial Catalog=HeroApp"); //Put your string connection here
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
